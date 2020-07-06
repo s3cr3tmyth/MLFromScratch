@@ -17,7 +17,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 # print(X_train.shape)
 # print(X_train.shape[0])
 
-
 ### define perfromance measure
 def MSE(y_true, y_pred):
     return np.mean((y_true-y_pred)**2)
