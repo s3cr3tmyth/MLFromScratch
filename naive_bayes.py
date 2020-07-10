@@ -35,6 +35,7 @@ class NaiveBayes:
             self._mean[c,:] = X_c.mean(axis=0)
             self._var[c,:] = X_c.var(axis=0) 
             # p[y] ->
+            # frequency
             self._priors[c] = X_c.shape[0] / float(n_samples)
     
     def predict(self, X):
